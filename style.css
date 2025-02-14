@@ -59,3 +59,35 @@ img {
     border-radius: 15px;
     padding: 5px;
 }
+/* * - minden html tagre igaz lesz */
+* {
+    box-sizing: border-box;
+    /* * - az elem szélességébe beletartozik a borer és a padding */
+}
+main {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+
+}
+section{
+    border: 1px solid red;
+
+}
+
+@media screen and (max-width:800px){
+
+main {
+    grid-template-columns: 1fr 1fr ;
+    }
+
+}
+@media screen and (max-width:500px){
+
+    main {
+        grid-template-columns: 1fr ;
+        }
+    
+    }
